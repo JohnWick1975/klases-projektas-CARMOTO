@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3bfefb77-3da3-402c-bdfb-4b1e61f90288" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1YR10aa83FQtMu14qtoPpC1F966" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\carmoto\app\views\pages" />
+      <recent name="C:\wamp64\www\carmoto\public" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3bfefb77-3da3-402c-bdfb-4b1e61f90288" name="Default Changelist" comment="" />
+      <created>1582890370502</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582890370502</updated>
+      <workItem from="1582890371615" duration="22186000" />
+      <workItem from="1582958381364" duration="8998000" />
+      <workItem from="1582967668405" duration="3000" />
+      <workItem from="1582975603583" duration="1189000" />
+      <workItem from="1583000073768" duration="5571000" />
+      <workItem from="1583005694556" duration="968000" />
+      <workItem from="1583006692041" duration="48000" />
+      <workItem from="1583045420312" duration="7649000" />
+      <workItem from="1583056204510" duration="19397000" />
+      <workItem from="1583133317900" duration="20457000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1199" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582891050267">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1199" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582891050267" />
+    <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583142832076">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1583142832076" />
+    <state x="1220" y="275" key="FileChooserDialogImpl" timestamp="1583005744012">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1220" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583005744012" />
+    <state x="882" y="234" key="NewPhpClassDialog" timestamp="1583142846775">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="882" y="234" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1583142846775" />
+    <state x="1240" y="334" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583056613435" />
+    <state x="906" y="310" key="NewPhpFileDialog" timestamp="1583145927790">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="906" y="310" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1583145927790" />
+    <state x="1274" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583062685389" />
+    <state x="922" y="162" key="SettingsEditor" timestamp="1582902478688">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="922" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582902478688" />
+    <state x="759" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1583165335178">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="759" y="241" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1583165335178" />
+    <state x="1136" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583056204278" />
+    <state x="1098" y="149" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1582907209375">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1098" y="149" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582907209375" />
+    <state x="1103" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1583048357504">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1103" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1583048357504" />
+  </component>
+</project>

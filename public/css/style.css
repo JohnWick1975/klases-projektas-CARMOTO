@@ -1,0 +1,32 @@
+/*
+body {
+    background: url("https://i.pinimg.com/originals/cc/9b/0e/cc9b0e2327dd2cbc13014bf45446e1f8.gif");
+    background-size: cover;
+}*/
+section {
+    position: relative;
+    background-color: black;
+    height: 92vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+section video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+
+
