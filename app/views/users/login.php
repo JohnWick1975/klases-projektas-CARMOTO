@@ -24,7 +24,7 @@
                     </div>
                     <div class="col">
                         <a href="<?= URLROOT; ?>/users/register" class="btn btn-light btn-block">No account? Register</a>
-                    </div>
+				</div>
                 </div>
             </form>
         </div>

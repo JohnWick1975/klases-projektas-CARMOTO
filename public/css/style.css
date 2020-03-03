@@ -27,6 +27,10 @@ section video {
     transform: translateX(-50%) translateY(-50%);
 }
 
+.select-form {
+    width: 205px;
+}
+
 
 
 

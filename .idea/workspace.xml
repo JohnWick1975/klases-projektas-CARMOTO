@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3bfefb77-3da3-402c-bdfb-4b1e61f90288" name="Default Changelist" comment="" />
+    <list default="true" id="3bfefb77-3da3-402c-bdfb-4b1e61f90288" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/Cars.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Cars.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Car.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Car.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/pages/cars.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/pages/cars.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,7 +34,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -55,6 +62,8 @@
       <workItem from="1583045420312" duration="7649000" />
       <workItem from="1583056204510" duration="19397000" />
       <workItem from="1583133317900" duration="20457000" />
+      <workItem from="1583165333588" duration="248000" />
+      <workItem from="1583218780260" duration="11713000" />
     </task>
     <servers />
   </component>
@@ -84,14 +93,15 @@
     </state>
     <state x="906" y="310" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1583145927790" />
     <state x="1274" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583062685389" />
-    <state x="922" y="162" key="SettingsEditor" timestamp="1582902478688">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="922" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582902478688" />
-    <state x="759" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1583165335178">
+    <state x="368" y="13" key="SettingsEditor" timestamp="1583232560591">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="759" y="241" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1583165335178" />
+    <state x="368" y="13" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1583232560591" />
+    <state x="922" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582902478688" />
+    <state x="759" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1583219133430">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="759" y="241" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1583219133430" />
     <state x="1136" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583056204278" />
     <state x="1098" y="149" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1582907209375">
       <screen x="0" y="0" width="1920" height="1040" />
