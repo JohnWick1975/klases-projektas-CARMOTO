@@ -2,12 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bfefb77-3da3-402c-bdfb-4b1e61f90288" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/controllers/Moto.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/About.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/Mot.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/pages/moto.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/Cars.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Cars.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/Car.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Car.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/Pages.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Pages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/session_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/session_helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libraries/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/libraries/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/inc/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/inc/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/pages/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/pages/about.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/pages/cars.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/pages/cars.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/pages/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/pages/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/users/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/register.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +73,8 @@
       <workItem from="1583056204510" duration="19397000" />
       <workItem from="1583133317900" duration="20457000" />
       <workItem from="1583165333588" duration="248000" />
-      <workItem from="1583218780260" duration="11713000" />
+      <workItem from="1583218780260" duration="20198000" />
+      <workItem from="1583306635121" duration="14088000" />
     </task>
     <servers />
   </component>
@@ -83,30 +94,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1220" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583005744012" />
-    <state x="882" y="234" key="NewPhpClassDialog" timestamp="1583142846775">
+    <state x="882" y="234" key="NewPhpClassDialog" timestamp="1583312085294">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="882" y="234" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1583142846775" />
+    <state x="882" y="234" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1583312085294" />
     <state x="1240" y="334" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583056613435" />
-    <state x="906" y="310" key="NewPhpFileDialog" timestamp="1583145927790">
+    <state x="906" y="310" key="NewPhpFileDialog" timestamp="1583308144687">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="906" y="310" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1583145927790" />
+    <state x="906" y="310" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1583308144687" />
     <state x="1274" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583062685389" />
     <state x="368" y="13" key="SettingsEditor" timestamp="1583232560591">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="368" y="13" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1583232560591" />
     <state x="922" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582902478688" />
-    <state x="759" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1583219133430">
+    <state x="759" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1583306634996">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="759" y="241" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1583219133430" />
+    <state x="759" y="241" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1583306634996" />
     <state x="1136" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583056204278" />
     <state x="1098" y="149" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1582907209375">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1098" y="149" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582907209375" />
+    <state x="492" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583320214776">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="492" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1583320214776" />
     <state x="1103" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1583048357504">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

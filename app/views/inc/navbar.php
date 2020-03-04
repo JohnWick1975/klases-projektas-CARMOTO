@@ -18,6 +18,12 @@
             <ul class="navbar-nav ml-auto">
                 <?php if (isset($_SESSION['user_id'])) : ?>
                     <li class="nav-item">
+                        <a class="nav-link" href="<?= URLROOT; ?>/cars/cars">Cars</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= URLROOT; ?>/moto/moto">Moto</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="<?= URLROOT; ?>/users/logout">Logout</a>
                     </li>
                 <?php else : ?>

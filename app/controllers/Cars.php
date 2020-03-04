@@ -11,6 +11,10 @@ class Cars extends Controller
     public function cars()
     {
 
+        if (!isLoggedIn()) {
+            redirect('users/login');
+        }
+
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $car = $this->carModel->selectCars();
             $data = [
