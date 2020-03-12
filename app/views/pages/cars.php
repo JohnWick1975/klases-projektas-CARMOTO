@@ -38,7 +38,7 @@
 						<h6 class="card-title"><?= $cars->model; ?></h6>
 						<p class="card-text">YEAR: <?= $cars->year; ?></p>
 						<p class="card-text">Fuel type: <?= $cars->fuel_type; ?></p>
-						<p class="card-text">Power: <?= $cars->color; ?></p>
+						<p class="card-text">Color: <?= $cars->color; ?></p>
 					</div>
 				</div>
             <?php endforeach; ?>

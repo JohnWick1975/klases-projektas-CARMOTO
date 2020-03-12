@@ -5,7 +5,6 @@ class Pages extends Controller
 {
     public function __construct()
     {
-        $this->userAbout = $this->model('About');
     }
 
     public function index()
@@ -21,6 +20,7 @@ class Pages extends Controller
     public function about()
     {
 
+        $this->userAbout = $this->model('About');
 
         // Check for POST
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -44,7 +44,6 @@ class Pages extends Controller
                     $data['email_err'] = 'Email is already taken';
                 }
             }
-            echo $data['email_err'];
             // Validate Name
             if (empty($data['name'])) {
                 $data['name_err'] = 'Please enter name';
@@ -75,5 +74,22 @@ class Pages extends Controller
             // Load view
             $this->view('pages/about', $data);
         }
+    }
+
+    public function random()
+    {
+
+
+        $this->randomModel = $this->model('Random');
+
+        $imgUrl = $this->randomModel->randomInfoUrl()->img_url;
+        $text = $this->randomModel->randomInfoText()->text;
+        $data = [
+            'img_url' => $imgUrl,
+            'text' => $text
+        ];
+
+        $this->view('pages/random', $data);
+
     }
 }

@@ -28,20 +28,22 @@
 		<div class="col-12">
 			<form class="form-inline" method="post">
 				<div class="form-group  mr-3">
-					<div><input type="text" name="name"
-								class="form-control <?= (!empty($data['name_err'])) ? 'is-invalid' : ''; ?>"
-								value="<?= $data['name']; ?>" placeholder="Name">
-						<span class="invalid-feedback"><?= $data['name_err']; ?></span>
+					<div>
+						<input type="text" name="name"
+							   class="form-control  <?= (!empty($data['name_err'])) ? 'is-invalid' : ''; ?>"
+							   value="<?= $data['name']; ?>" placeholder="Name">
+						<span class="invalid-feedback position-absolute"><?= $data['name_err']; ?></span>
 					</div>
 				</div>
 				<div class="form-group  mr-3">
-					<div><input type="email" name="email" class="form-control <?=
+					<div>
+						<input type="email" name="email" class="form-control <?=
                         (!empty($data['email_err'])) ? 'is-invalid' : ''; ?>" value="<?= $data['email']; ?>"
-								placeholder="Email" aria-describedby="emailHelp">
-						<span class="invalid-feedback"><?= $data['email_err']; ?></span>
+							   placeholder="Email" aria-describedby="emailHelp">
+						<span class="invalid-feedback position-absolute"><?= $data['email_err']; ?></span>
 					</div>
 				</div>
-				<button type="submit" class="btn btn-primary mb-3" name="subscribe">Subscribe</button>
+				<button type="submit" class="btn btn-primary mt-5 mt-md-0" name="subscribe">Subscribe</button>
 			</form>
 		</div>
 	</div>

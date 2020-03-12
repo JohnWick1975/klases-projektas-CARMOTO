@@ -21,9 +21,8 @@ class Car
     {
         if (isset($_POST['color']) && (isset($_POST['fuel_type']))) {
             $fuel = $_POST['fuel_type'];
-            $color = $_POST['color'];
-            $this->db->query("SELECT * FROM `cars` WHERE color IN ('" . implode("','",
-                    $color) . "') AND fuel_type IN ('" . implode("','", $fuel) . "')");
+            $color = implode("','", $_POST['color']);
+            $this->db->query("SELECT * FROM `cars` WHERE color IN ('$color') AND fuel_type IN ('" . implode("','", $fuel) . "')");
         } else {
             $color = isset($_POST['color']) ? $_POST['color'] : array();
             $fuel = isset($_POST['fuel_type']) ? $_POST['fuel_type'] : array();
