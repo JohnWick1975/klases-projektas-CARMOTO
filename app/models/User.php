@@ -67,8 +67,8 @@ class User
 
     public function getAllUsers()
     {
-       $this->db->query('SELECT id, name, email, role FROM users ');
-       return $this->db->resultSet();
+        $this->db->query('SELECT id, name, email, role FROM users ');
+        return $this->db->resultSet();
     }
 
     // Get user by Id
@@ -109,16 +109,14 @@ class User
         $id = $array['id'];
         unset($array['id']);
 
-        if (count($array) > 1){
+        if (count($array) > 1) {
             $comma = ',';
         }
         $string = '';
         foreach ($array as $key => $value) {
-            $string .= ('`' . $key . '`' . ' = '  . '\'' . $value . '\'' . $comma);
+            $string .= ('`' . $key . '`' . ' = ' . '\'' . $value . '\'' . $comma);
         }
-        $string = substr($string,0,-1);
-        echo $id . '<br>';
-        echo $string . '<br>';
+        $string = substr($string, 0, -1);
         $this->db->query("UPDATE `users` SET $string WHERE `id`= $id");
 
         // Execute
@@ -184,5 +182,11 @@ class User
         } else {
             return false;
         }
+    }
+
+    public function getUsersByRole()
+    {
+        $this->db->query('SELECT role FROM users ');
+        return $this->db->resultSet();
     }
 }

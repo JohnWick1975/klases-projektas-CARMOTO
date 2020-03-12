@@ -19,7 +19,7 @@
 		</tbody>
 	</table>
 	<div class="container bg-secondary mt-5">
-		<form class="admin-form my-auto" method="post">
+		<form class="admin-form my-auto" method="post" action="<?= URLROOT; ?>/admins/admins">
 			<div class="row py-3">
 				<div class="form-group col-md-3 my-auto">
 					<label class="text-white mr-1" for="id">ID</label>
@@ -51,9 +51,6 @@
 				</div>
 			</div>
 			<div>
-				<a href="<?= URLROOT ?>/admins/admins" name="insert" class="btn btn-success pull-right mt-5 mr-3">REFRESH</a>
-			</div>
-			<div>
 				<button type="submit" name="update" class="btn btn-warning pull-right mt-5 mr-3">UPDATE</button>
 			</div>
 			<div>
@@ -63,5 +60,21 @@
 				<button type="submit" name="select" class="btn btn-info pull-right mt-5 mr-3">SELECT</button>
 			</div>
 		</form>
+	</div>
+</div>
+<div class="div-progress container mb-5">
+	<label>Admin</label>
+	<div class="progress mb-3">
+		<div name="admin" class="progress-bar bg-success" role="progressbar"
+			 style="width: <?= $data['admin_proc'] ?>"><?= $data['admin'] . ' ' . '(' . $data['admin_proc'] . ')'; ?></div>
+	</div>
+	<label>User</label>
+	<div class="progress mb-3">
+		<div class="progress-bar bg-info" role="progressbar"
+			 style="width: <?= $data['user_proc'] ?>"><?= $data['user'] . ' ' . '(' . $data['user_proc'] . ')'; ?></div>
+	</div>
+	<label>All users</label>
+	<div class="progress">
+		<div class="progress-bar bg-warning" role="progressbar" style="width: 100%"><?= $data['users_amount']; ?></div>
 	</div>
 </div>

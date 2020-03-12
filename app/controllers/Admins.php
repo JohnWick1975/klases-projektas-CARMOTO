@@ -18,24 +18,6 @@ class Admins extends Controller
 
         $data = ['all_users' => $usersInfo];
 
-       /* $array = [
-            'id' => 3,
-            'email' => 'gmail@gmail.com',
-            'name' => 'Simas'
-        ];
-        $id = $array['id'];
-        unset($array['id']);
-        var_dump($array);
-        print '<br>' . $id;
-        $comma = '';
-        if (count($array) > 1) {
-            $comma = ',';
-        }
-        $string = '';
-        foreach ($array as $key => $value) {
-            $string .= (' ' . $key . ' = ' . $value . $comma);
-        }
-        print $string;*/
 
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             // Process form
@@ -149,7 +131,7 @@ class Admins extends Controller
                         $data['id_err'] = 'This Id is not exist';
                     }
                 }
-                if (empty($data['id_err'])){
+                if (empty($data['id_err'])) {
                     $array['id'] = $data['id'];
                     // Validate and push User email in array
                     if (!empty($data['email'])) {
@@ -190,6 +172,29 @@ class Admins extends Controller
                 }
             }
         }
+
+
+
+        // Diagram users, admins
+        $result = $this->userModel->getUsersByRole();
+        $usersAmount = count($result);
+        $user = 0;
+        $admin = 0;
+        $data['users_amount'] = $usersAmount;
+        foreach ($result as $value) {
+            if ($value->role == 'user') {
+                $user++;
+            } else {
+                $admin++;
+            }
+        }
+        $userProc = round((100 * $user) / $usersAmount);
+        $adminProc = round((100 * $admin) / $usersAmount);
+        $data['user'] = $user;
+        $data['admin'] = $admin;
+        $data['user_proc'] = $userProc . '%';
+        $data['admin_proc'] = $adminProc . '%';
+
         $this->view('admins/admins', $data);
     }
 
