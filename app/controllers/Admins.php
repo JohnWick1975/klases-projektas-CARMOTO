@@ -18,6 +18,25 @@ class Admins extends Controller
 
         $data = ['all_users' => $usersInfo];
 
+       /* $array = [
+            'id' => 3,
+            'email' => 'gmail@gmail.com',
+            'name' => 'Simas'
+        ];
+        $id = $array['id'];
+        unset($array['id']);
+        var_dump($array);
+        print '<br>' . $id;
+        $comma = '';
+        if (count($array) > 1) {
+            $comma = ',';
+        }
+        $string = '';
+        foreach ($array as $key => $value) {
+            $string .= (' ' . $key . ' = ' . $value . $comma);
+        }
+        print $string;*/
+
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             // Process form
 
@@ -36,7 +55,6 @@ class Admins extends Controller
                 'email' => trim($_POST['email']),
                 'role' => trim($_POST['role']),
             ];
-
             // If click SELECT
             if (isset($_POST['select'])) {
                 // Validate Id
@@ -83,7 +101,46 @@ class Admins extends Controller
             }*/
 
             // If click UPDATE ver.0.2
+            /* if (isset($_POST['update'])) {
+                 // Validate Id
+                 if (empty($data['id'])) {
+                     $data['id_err'] = 'Please enter Id';
+                 } else {
+                     if (!$data['get_user'] = $this->userModel->getUserById($data['id'])) {
+                         $data['id_err'] = 'This Id is not exist';
+                     }
+                 }
+                 if (empty($data['id_err'])) {
+                     // Validate and update User email
+                     if (!empty($data['email'])) {
+                         // Validate user Email
+                         if ($this->userModel->findUserByEmail($data['email'])) {
+                             $data['email_err'] = 'Email is already taken';
+                         } else {
+                             // Update email
+                             $this->userModel->updateEmailById($data);
+                         }
+                     }
+
+                     //  Update User name
+                     if (!empty($data['name'])) {
+                         $this->userModel->updateNameById($data);
+                     }
+
+                     // Validate and update user Role
+                     if (!empty($data['role'])) {
+                         if ($data['role'] != 'user' && $data['role'] != 'admin') {
+                             $data['role_err'] = 'Please enter \'user\' or \'admin\'';
+                         } else {
+                             $this->userModel->updateRoleById($data);
+                         }
+                     }
+                 }
+             }*/
+
+            // If click UPDATE ver.0.3
             if (isset($_POST['update'])) {
+                $array = [];
                 // Validate Id
                 if (empty($data['id'])) {
                     $data['id_err'] = 'Please enter Id';
@@ -92,33 +149,34 @@ class Admins extends Controller
                         $data['id_err'] = 'This Id is not exist';
                     }
                 }
-                if (empty($data['id_err'])) {
-                    // Validate and update User email
+                if (empty($data['id_err'])){
+                    $array['id'] = $data['id'];
+                    // Validate and push User email in array
                     if (!empty($data['email'])) {
                         // Validate user Email
                         if ($this->userModel->findUserByEmail($data['email'])) {
                             $data['email_err'] = 'Email is already taken';
                         } else {
-                            // Update email
-                            $this->userModel->updateEmailById($data);
+                            // Push email in array
+                            $array['email'] = $data['email'];
                         }
                     }
-
-                    //  Update User name
+                    //  Push User Name to array
                     if (!empty($data['name'])) {
-                        $this->userModel->updateNameById($data);
+                        $array['name'] = $data['name'];
                     }
-
-                    // Validate and update user Role
+                    // Validate and push user Role in array
                     if (!empty($data['role'])) {
                         if ($data['role'] != 'user' && $data['role'] != 'admin') {
                             $data['role_err'] = 'Please enter \'user\' or \'admin\'';
                         } else {
-                            $this->userModel->updateRoleById($data);
+                            $array['role'] = $data['role'];
                         }
                     }
+                    $this->userModel->updateUserArray($array);
                 }
             }
+
 
             // If click DELETE
             if (isset($_POST['delete'])) {
@@ -126,8 +184,8 @@ class Admins extends Controller
                 if (empty($data['id'])) {
                     $data['id_err'] = 'Please enter Id';
                 } elseif (!$data['get_user'] = $this->userModel->getUserById($data['id'])) {
-                        $data['id_err'] = 'This Id is not exist';
-                }else{
+                    $data['id_err'] = 'This Id is not exist';
+                } else {
                     $this->userModel->deleteUserById($data);
                 }
             }

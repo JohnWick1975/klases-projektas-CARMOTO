@@ -101,6 +101,34 @@ class User
         }
     }
 
+    // Update User with array
+    // Update user by Id
+    public function updateUserArray($array)
+    {
+        $comma = ' ';
+        $id = $array['id'];
+        unset($array['id']);
+
+        if (count($array) > 1){
+            $comma = ',';
+        }
+        $string = '';
+        foreach ($array as $key => $value) {
+            $string .= ('`' . $key . '`' . ' = '  . '\'' . $value . '\'' . $comma);
+        }
+        $string = substr($string,0,-1);
+        echo $id . '<br>';
+        echo $string . '<br>';
+        $this->db->query("UPDATE `users` SET $string WHERE `id`= $id");
+
+        // Execute
+        if ($this->db->execute()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     // Update user Name by Id
 
     public function updateNameById($data)
